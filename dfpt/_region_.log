@@ -1,0 +1,601 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=prv_dfpt 2017.12.20)  20 DEC 2017 23:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_dfpt _region_.tex
+(./_region_.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 3 language(s) loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+ article.cls    2014/09/29 v1.4h Standard LaTeX document class
+  size10.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+ amsmath.sty    2016/11/05 v2.16a AMS math features
+ amstext.sty    2000/06/29 v2.01 AMS text
+  amsgen.sty    1999/11/30 v2.0 generic functions
+  amsbsy.sty    1999/11/29 v1.2d Bold Symbols
+  amsopn.sty    2016/03/08 v2.02 operator names
+      bm.sty    2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+(/home/gautam/.emacs.d/elpa/auctex-12.1.0/latex/preview.sty
+Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
+ (/home/gautam/.emacs.d/elpa/auctex-12.1.0/latex/prtightpage.def
+\PreviewBorder=\dimen112
+) (/home/gautam/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count99
+\hfuzz=\dimen113
+(/home/gautam/.emacs.d/elpa/auctex-12.1.0/latex/prauctex.cfg)) (/home/gautam/.emacs.d/elpa/auctex-12.1.0/latex/prfootnotes.def)
+\pr@snippet=\count100
+\pr@box=\box28
+\pr@output=\toks19
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+)  !name(dfpt.tex) !offset(-3) 
+! Preview: Snippet 1 started.
+<-><->
+      
+l.17 \section
+             {The formalism of DFT}
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(655359+0x22609920).
+<-><->
+      
+l.17 \section{The formalism of DFT}
+                                   
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.18         \subsection
+                        {Kohn, Sham and all that}
+Not a real error.
+
+! Preview: Snippet 2 ended.(546132+152916x22609920).
+<-><->
+      
+l.18         \subsection{Kohn, Sham and all that}
+                                                 
+Not a real error.
+
+[2
+
+]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.22         \begin{equation}
+                              \label{eq:schrod}
+Not a real error.
+
+! Preview: Snippet 3 ended.(2359318+0x22609920).
+<-><->
+      
+l.25         \end{equation}
+                           
+Not a real error.
+
+[3
+
+]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.28         $
+              n(\vec{r}) = \Psi^*(\vec{r})\Psi(\vec{r})$ . In analogy, keepi...
+Not a real error.
+
+! Preview: Snippet 4 ended.(491520+163840x5058718).
+<-><->
+      
+l.28 ...n(\vec{r}) = \Psi^*(\vec{r})\Psi(\vec{r})$
+                                                   . In analogy, keeping in ...
+Not a real error.
+
+[4]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.29 ...indistinguishable, we can integrate over $
+                                                  N-1$ variables
+Not a real error.
+
+! Preview: Snippet 5 ended.(447828+54613x1726685).
+<-><->
+      
+l.29 ...stinguishable, we can integrate over $N-1$
+                                                   variables
+Not a real error.
+
+[5]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.32         \begin{equation}
+                              \label{eq:dens}
+Not a real error.
+
+! Preview: Snippet 6 ended.(1456371+0x22609920).
+<-><->
+      
+l.36         \end{equation}
+                           
+Not a real error.
+
+[6
+
+]
+
+LaTeX Warning: Reference `eq:dens' on page 1 undefined on input line 39.
+
+! Preview: Snippet 7 started.
+<-><->
+      
+l.42         \begin{equation}
+                              \label{eq:density}
+Not a real error.
+
+! Preview: Snippet 7 ended.(2036992+0x22609920).
+<-><->
+      
+l.44         \end{equation}
+                           
+Not a real error.
+
+[7
+
+]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.48         \begin{equation}
+                              \label{eq:funcham}
+Not a real error.
+
+! Preview: Snippet 8 ended.(1456371+0x22609920).
+<-><->
+      
+l.50         \end{equation}
+                           
+Not a real error.
+
+[8
+
+]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.52         Where the $
+                        F[n]$ is a \textit{universal} functional of density.
+Not a real error.
+
+! Preview: Snippet 9 ended.(491520+163840x1269916).
+<-><->
+      
+l.52         Where the $F[n]$
+                              is a \textit{universal} functional of density.
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.54 ...er gain an intuition about the nature of $
+                                                  F[n]$, we can defer to
+Not a real error.
+
+! Preview: Snippet 10 ended.(491520+163840x1269916).
+<-><->
+      
+l.54 ...in an intuition about the nature of $F[n]$
+                                                  , we can defer to
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.55 ...earch} formalism of DFT, which gives the $
+                                                  F[n]$ as
+Not a real error.
+
+! Preview: Snippet 11 ended.(491520+163840x1269916).
+<-><->
+      
+l.55 ...} formalism of DFT, which gives the $F[n]$
+                                                   as
+Not a real error.
+
+[11]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.56         \begin{equation}
+                             \label{eq:constrain}
+Not a real error.
+
+! Preview: Snippet 12 ended.(1272490+0x22609920).
+<-><->
+      
+l.59         \end{equation}
+                           
+Not a real error.
+
+[12
+
+]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.60         Even otherwise, te $
+                                 F[n]$ has a similar interpretation.
+Not a real error.
+
+! Preview: Snippet 13 ended.(491520+163840x1269916).
+<-><->
+      
+l.60         Even otherwise, te $F[n]$
+                                       has a similar interpretation.
+Not a real error.
+
+[13]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.61 ...eaway, though, is that the exact form of $
+                                                  F[n]$ is difficult to obtain
+Not a real error.
+
+! Preview: Snippet 14 ended.(491520+163840x1269916).
+<-><->
+      
+l.61 ..., though, is that the exact form of $F[n]$
+                                                   is difficult to obtain
+Not a real error.
+
+[14]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.62         explicitly as a function of $
+                                          n$. Even though the Hohenberg-Kohn...
+Not a real error.
+
+! Preview: Snippet 15 ended.(282168+0x393370).
+<-><->
+      
+l.62         explicitly as a function of $n$
+                                            . Even though the Hohenberg-Kohn...
+Not a real error.
+
+[15]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 65.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
+
+! Preview: Snippet 16 started.
+<-><->
+      
+l.65         \item A given density $
+                                    n$ fixes the $V(\vec{r})$, by HK.
+Not a real error.
+
+! Preview: Snippet 16 ended.(282168+0x393370).
+<-><->
+      
+l.65         \item A given density $n$
+                                       fixes the $V(\vec{r})$, by HK.
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.65         \item A given density $n$ fixes the $
+                                                  V(\vec{r})$, by HK.
+Not a real error.
+
+! Preview: Snippet 17 ended.(491520+163840x1351531).
+<-><->
+      
+l.65 ...A given density $n$ fixes the $V(\vec{r})$
+                                                  , by HK.
+Not a real error.
+
+[17]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.67           is solved to give $
+                                  \Psi$
+Not a real error.
+
+! Preview: Snippet 18 ended.(447828+0x509726).
+<-><->
+      
+l.67           is solved to give $\Psi$
+                                       
+Not a real error.
+
+[18]
+
+LaTeX Warning: Reference `eq:constrain' on page 1 undefined on input line 68.
+
+! Preview: Snippet 19 started.
+<-><->
+      
+l.75         $
+              \langle \widehat{H}_{e-e} \rangle$ at least partly as a funcio...
+Not a real error.
+
+! Preview: Snippet 19 ended.(638976+163840x1994165).
+<-><->
+      
+l.75         $\langle \widehat{H}_{e-e} \rangle$
+                                                 at least partly as a funcio...
+Not a real error.
+
+[19]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.77         like term $
+                        \int \int \frac{e^2 n(\vec{r}) n({\vec{r}\,}') }{2 |...
+Not a real error.
+
+! Preview: Snippet 20 ended.(726793+340683x5605820).
+<-><->
+      
+l.78 ...  - {\vec{r}\,}'|} d\vec{r} d{\vec{r}\,}'$
+                                                  . All other effects are cl...
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.78 ...l other effects are clubbed in under the $
+                                                  E_{xc}[n]$
+Not a real error.
+
+! Preview: Snippet 21 ended.(491520+163840x1805408).
+<-><->
+      
+l.78 ...fects are clubbed in under the $E_{xc}[n]$
+                                                  
+Not a real error.
+
+[21]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.86         of varying over the $
+                                   n(\vec{r}) $ into solving the self consis...
+Not a real error.
+
+! Preview: Snippet 22 ended.(491520+163840x1216972).
+<-><->
+      
+l.86         of varying over the $ n(\vec{r}) $
+                                                into solving the self consis...
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.88         \begin{equation}
+                             \label{eq:dft_schrod}
+Not a real error.
+
+! Preview: Snippet 23 ended.(1481634+0x22609920).
+<-><->
+      
+l.90         \end{equation}
+                           
+Not a real error.
+
+[23
+
+]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.91         Here, the term $
+                              V_{har.} $ acts as an effective electrostatic ...
+Not a real error.
+
+! Preview: Snippet 24 ended.(447828+98303x1391029).
+<-><->
+      
+l.91         Here, the term $ V_{har.} $
+                                         acts as an effective electrostatic ...
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.95         \begin{equation}
+                              \label{eq:vhartree}
+Not a real error.
+
+! Preview: Snippet 25 ended.(1657228+0x22609920).
+<-><->
+      
+l.97         \end{equation}
+                           
+Not a real error.
+
+[25
+
+]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.100         term $
+                    V_{xc}$. This includes, something like the Hartree excha...
+Not a real error.
+
+! Preview: Snippet 26 ended.(447828+98303x946458).
+<-><->
+      
+l.100         term $V_{xc}$
+                           . This includes, something like the Hartree excha...
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.104         \begin{equation}
+                              \label{eq:adiabat_cont}
+Not a real error.
+
+! Preview: Snippet 27 ended.(9416011+0x22609920).
+<-><->
+      
+l.119       \end{equation}
+                          
+Not a real error.
+
+[27
+
+]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.120 ...ave introduced the correlation function $
+                                                  g_\lambda(\vec{r}, {\vec{r...
+Not a real error.
+
+! Preview: Snippet 28 ended.(561063+163840x2378032).
+<-><->
+      
+l.120 ...nction $g_\lambda(\vec{r}, {\vec{r}\,}')$
+                                                  . After a few
+Not a real error.
+
+[28]
+! Preview: Snippet 29 started.
+<-><->
+      
+l.122       \begin{equation}
+                            
+Not a real error.
+
+! Preview: Snippet 29 ended.(3597828+0x22609920).
+<-><->
+      
+l.130       \end{equation}
+                          
+Not a real error.
+
+[29
+
+]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.132       energy per particle $
+                                 \epsilon_{xc} = \int d{\vec{r}\,}'\, \frac{...
+Not a real error.
+
+! Preview: Snippet 30 ended.(697667+340683x5640555).
+<-><->
+      
+l.133 ...{\vec{r}\,}')}{|\vec{r} - {\vec{r}\,}'|}$
+                                                  . Physically, the value $n...
+Not a real error.
+
+[30]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.133 ... {\vec{r}\,}'|}$. Physically, the value $
+                                                  n_{xc}(\vec{r}, {\vec{r}\,...
+Not a real error.
+
+! Preview: Snippet 31 ended.(561063+163840x2679371).
+<-><->
+      
+l.133 ...the value $n_{xc}(\vec{r}, {\vec{r}\,}')$
+                                                   represents
+Not a real error.
+
+[31]
+! Preview: Snippet 32 started.
+<-><->
+      
+l.134 ...an \textit{electron-hole} averaged over $
+                                                  \lambda$, and is the oppos...
+Not a real error.
+
+! Preview: Snippet 32 ended.(455111+0x382295).
+<-><->
+      
+l.134 ...it{electron-hole} averaged over $\lambda$
+                                                  , and is the opposite sign...
+Not a real error.
+
+[32]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.134 ... $\lambda$, and is the opposite sign as $
+                                                  n(\vec{r})$.
+Not a real error.
+
+! Preview: Snippet 33 ended.(491520+163840x1216972).
+<-><->
+      
+l.134 ... and is the opposite sign as $n(\vec{r})$
+                                                  .
+Not a real error.
+
+[33]
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 232 strings out of 494007
+ 3215 string characters out of 6170308
+ 66874 words of memory out of 5000000
+ 4467 multiletter control sequences out of 15000+600000
+ 15112 words of font info for 53 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 22i,14n,24p,162b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on _region_.pdf (33 pages, 128505 bytes).
+PDF statistics:
+ 163 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

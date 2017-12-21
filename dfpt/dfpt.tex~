@@ -1,0 +1,135 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+\usepackage{bm}
+
+\title{DFPT: Density functional perturbation theory}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{The formalism of DFT}
+        \subsection{Kohn, Sham and all that}
+
+        We begin with the general many-body Schrodinger equation:
+
+        \begin{equation} \label{eq:schrod}
+          \bm{\widehat{H}}\Psi = \left( \sum_{i}^{N} \left(-\frac{\hbar^2}{2m_i}\nabla_i^2\right)
+            + \sum_{i}^{N}V(\vec{r_i}) + \sum_{i<j}^{N}U(\vec{r_i}, \vec{r_j})\right)\Psi = E\Psi
+        \end{equation}
+
+        For a single electron, one defines the probability density to be given by
+        $n(\vec{r}) = \Psi^*(\vec{r})\Psi(\vec{r})$ . In analogy, keeping in mind
+        that electrons are indistinguishable, we can integrate over $N-1$ variables
+        in the many-body function to arrive at the many body electron density:
+
+        \begin{equation} \label{eq:dens}
+          n(\vec{r}) = N\int d\vec{r_2}\int d\vec{r_3} \ldots \int d\vec{r_N}
+          \Psi^*(\vec{r}, \vec{r_2}, \vec{r_3}, \ldots, \vec{r_N})  \Psi(\vec{r},
+          \vec{r_2}, \vec{r_3}, \ldots, \vec{r_N})
+        \end{equation}
+
+        Further, we can arrive at a definition for a density operator that yields
+        expectation value in \ref{eq:dens}. One can check that the following operator
+        does the trick:
+
+        \begin{equation} \label{eq:density}
+                \widehat{n}(\vec{r}) = \sum_{i}^{N} \delta(\vec{r} - \vec{r_i})
+        \end{equation}
+
+        Now, we can write the expectation of energy as, from the Hohenberg-Kohn theorem:
+
+        \begin{equation} \label{eq:funcham}
+                E[n] = F[n] + \int V(\vec{r}) n(\vec{r}) dr^3
+        \end{equation}
+
+        Where the $F[n]$ is a \textit{universal} functional of density.
+
+        To further gain an intuition about the nature of $F[n]$, we can defer to
+        the \textit{constrained search} formalism of DFT, which gives the $F[n]$ as
+        \begin{equation}\label{eq:constrain}
+          F[n] = \min_{\{\Psi \mid \langle\widehat{n}(r)\rangle = n(r)\}}
+          \langle \Psi| \widehat{T} + \widehat{H}_{e-e} |\Psi\rangle
+        \end{equation}
+        Even otherwise, te $F[n]$ has a similar interpretation.
+        The key takeaway, though, is that the exact form of $F[n]$ is difficult to obtain
+        explicitly as a function of $n$. Even though the Hohenberg-Kohn theorems make
+        such a representation possible in theory,
+        \begin{itemize}
+        \item A given density $n$ fixes the $V(\vec{r})$, by HK.
+        \item This fixes all terms in the many-body Schr{\"o}dinger equation, which
+          is solved to give $\Psi$
+        \item The above expectation value [\ref{eq:constrain}] is then taken.
+        \end{itemize}
+
+        there is no prescription for the first step, nor a general or easy way to
+        deal with the second.
+
+        One way to circumvent this difficulty is to write the unknown
+        $\langle \widehat{H}_{e-e} \rangle$ at least partly as a funcional of density. We
+        expect a large contribution to this to come from a simple couloumbic-Hartree
+        like term $\int \int \frac{e^2 n(\vec{r}) n({\vec{r}\,}') }{2 |\vec{r}
+          - {\vec{r}\,}'|} d\vec{r} d{\vec{r}\,}'$. All other effects are clubbed in under the $E_{xc}[n]$
+        or the exchange-correlation energy.
+
+        Now, the real crowning glory of DFT is what can be done using the
+        \textit{Kohn-Sham ansatz}, which states that the correct ground state
+        density of the full interacting system is \textit{exactly} the same as the
+        ground state density of some unknown, non-interacting system. Based on this
+        (details have been skipped), we can reduce the solution of the difficult problem
+        of varying over the $ n(\vec{r}) $ into solving the self consistent Schr{\"o}dinger
+        equation:
+        \begin{equation}\label{eq:dft_schrod}
+                [-\frac{\hbar^2}{2m}\nabla^2 + V_{hartree} + V_{xc} + V_{ext}]\Psi = \epsilon_o \Psi
+        \end{equation}
+        Here, the term $ V_{har.} $ acts as an effective electrostatic potential felt
+        by an electron and corresponds to a similar term in the Hartree-Fock treatment.
+        Explicitly, it is given by:
+
+        \begin{equation} \label{eq:vhartree}
+                V_{har.}({\vec{r}\,}') = \int dr' \frac{e^2 n({\vec{r}\,}')}{|\vec{r} - {\vec{r}\,}'|}
+        \end{equation}
+
+        All of the difficulty has thus been shoved under the carpet in the form of the
+        term $V_{xc}$. This includes, something like the Hartree exchange effects and other
+        unknown effects that arise from the fact that we haven't assumed a slater determinant
+        ground state. We must next deal with this.
+        Using adiabatic connection (details omitted), we get:
+        \begin{equation}\label{eq:adiabat_cont}
+        \begin{aligned}
+          E(1) - E(0) &= \int_{0}^{1} \langle \Psi(\lambda)| \widehat{H}_{e-e}
+          |\Psi(\lambda) \rangle d\lambda + \int_{0}^{1} d\lambda \int
+          \frac{\partial V(r,\lambda)}{\partial \lambda}\langle\hat{n}(r)\rangle dr\\
+          &= \int^{1}_{0} d\lambda \biggl\langle \sum_{i<j}^{N}U(\hat{r_i}, \hat{r_j})
+          \biggr\rangle + \int [V(\vec{r}, 1) - V(\vec{r},0)]n(\vec{r})d\vec{r}\\
+          &= \int^{1}_{0} d \lambda \int \int d \vec{r} d{\vec{r}\,}'
+          \frac{e^2}{2|\vec{r} - {\vec{r}\,}'|} \frac{\biggl\langle \sum_{i,j}^{N}
+           \delta(\hat{r_i} - \vec{r}) \delta(\hat{r_j} - {\vec{r}\,}') \biggr\rangle}
+         {n(\vec{r})n({\vec{r}\,}')} + \mathrm{2^{nd}\  term}\\
+         &= \int^{1}_{0} d \lambda \int \int d \vec{r} d{\vec{r}\,}'
+         \frac{e^2}{2|\vec{r} - {\vec{r}\,}'|}\ g_\lambda(\vec{r}, {\vec{r}\,}')
+         + \mathrm{2^{nd}\  term}\\
+        \end{aligned}
+      \end{equation}
+      Where we have introduced the correlation function $g_\lambda(\vec{r}, {\vec{r}\,}')$. After a few
+      manipulations, we arrive at the result:
+      \begin{equation}
+        \begin{aligned}
+        \label{eq:9}
+        E_{xc}[n] &= \int^{1}_{0}d\lambda \int \int d\vec{r} d{\vec{r}\,}' n({\vec{r}\,}')
+        \frac{e^2}{|\vec{r} - {\vec{r}\,}'|} [g_\lambda(\vec{r}, {\vec{r}\,}') - 1]\\
+        &= \int d\vec{r}\, n(\vec{r}) \int d{\vec{r}\,}'\, \frac{n_{xc}(\vec{r}, {\vec{r}\,}')}
+        {|\vec{r} - {\vec{r}\,}'|}
+        \end{aligned}
+      \end{equation}
+      We can also define and additional quantity representing the exchange-correlation
+      energy per particle $\epsilon_{xc} = \int d{\vec{r}\,}'\, \frac{n_{xc}
+        (\vec{r}, {\vec{r}\,}')}{|\vec{r} - {\vec{r}\,}'|}$. Physically, the value $n_{xc}(\vec{r}, {\vec{r}\,}')$ represents
+      the density of an \textit{electron-hole}, and is the opposite sign as $n(\vec{r})$.
+
+
+
+\end{document}
